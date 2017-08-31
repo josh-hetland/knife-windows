@@ -1,5 +1,17 @@
 # knife-windows Change Log
 
+## Release 1.9.0
+
+* [knife-windows #416](https://github.com/chef/knife-windows/pull/416) Add concurrency support via the `--concurrency` flag
+
+## Release 1.8.0
+
+* [knife-windows #407](https://github.com/chef/knife-windows/pull/407) Added value for config_log_level and config_log_location
+
+## Release 1.7.1
+
+* [knife-windows #409](https://github.com/chef/knife-windows/pull/409) Fix trusted_cert copy script generation on windows
+
 ## Release 1.7.0
 
 * [knife-windows #400](https://github.com/chef/knife-windows/pull/400) Allow a custom codepage to be specified and passed to the cmd shell

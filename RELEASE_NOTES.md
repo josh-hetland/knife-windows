@@ -6,5 +6,12 @@ Example Note:
 ## Example Heading
 Details about the thing that changed that needs to get included in the Release Notes in markdown.
 -->
-# knife-windows 1.6.0 release notes:
-This release adds a `--winrm-shell` argument to `knife winrm`. This accepts one of three possible values: `cmd`, `powershell` or `elevated`. The default value is `cmd`. The `elevated` shell is similar to the `powershell` shell but runs the powershell command from a scheduled task.
+# knife-windows 1.9.0 release notes:
+
+This release re-introduces support for concurrent WinRM connections when
+running `knife winrm`. Simply specify the number of concurrent connections
+you would like using the `-C` (or `--concurrency`) flag.
+
+```
+knife winrm "role:web" "net stats srv" -X Administrator -P 'super_secret_password' -C 4
+```
